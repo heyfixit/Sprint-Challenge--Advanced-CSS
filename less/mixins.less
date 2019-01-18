@@ -14,3 +14,20 @@
     text-decoration: none;
   }
 }
+
+.button(@background-color: #22283A, @color: white) {
+  display: inline-block;
+  background-color: @background-color;
+  border-radius: 5px;
+  cursor: pointer;
+  color: @color;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 8px 16px 4px;
+  border: 2px solid @background-color;
+
+  &:hover {
+    background-color: @color;
+    color: @background-color;
+  }
+}

@@ -1,1 +1,16 @@
 // Mixins Here
+.centerflex(@flex-direction: row) {
+  dispaly: flex;
+  flex-direction: @flex-direction;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.styleless-anchors(@color: black) {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -162,11 +162,13 @@ p {
 }
 .navigation {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 12px 0;
   background-color: #FAFAFA;
+  dispaly: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .navigation .banner {
   font-size: 4rem;
@@ -180,6 +182,9 @@ p {
   font-size: 1.8rem;
   margin: 0 10px;
 }
+.navigation nav a:hover {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -189,6 +194,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .main-header {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;

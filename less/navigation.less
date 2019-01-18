@@ -2,9 +2,12 @@
 .navigation {
   margin: 0 auto;
   padding: 12px 0;
-  background-color: @nav-bg;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   .centerflex(@flex-direction: column);
-
+  .colorize-bg(@nav-bg, 0.9);
 
   .banner {
     color: @nav-font;

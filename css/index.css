@@ -159,16 +159,21 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 102px;
 }
 .navigation {
   margin: 0 auto;
   padding: 12px 0;
-  background-color: #F6F6F6;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   dispaly: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: hsla(0, 0%, 96.47058824%, 0.9);
 }
 .navigation .banner {
   color: #454A59;

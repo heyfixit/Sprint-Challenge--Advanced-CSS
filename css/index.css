@@ -178,13 +178,20 @@ p {
   margin-top: 18px;
 }
 .navigation nav a {
+  display: inline-block;
+  transition: color 0.2s, background-color 0.2s;
   color: #454A59;
   text-decoration: none;
-  font-size: 1.8rem;
-  margin: 0 10px;
+  font-size: 1.7rem;
+  margin: 0 3px;
+  padding: 0 10px 3px;
 }
 .navigation nav a:hover {
   text-decoration: none;
+}
+.navigation nav a:hover {
+  color: #F6F6F6;
+  background-color: #454A59;
 }
 footer {
   color: #22283B;

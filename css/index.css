@@ -208,6 +208,31 @@ footer {
   justify-content: center;
   align-items: center;
 }
+form {
+  margin: 0 10px;
+}
+@media (max-width: 500px) {
+  form {
+    margin: 0;
+  }
+}
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+form fieldset input[type="text"] {
+  line-height: 2rem;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #5E6164;
+}
+@media (max-width: 500px) {
+  form fieldset input[type="text"] {
+    width: 100%;
+  }
+}
 .home .main-header {
   border-radius: 5px;
   width: 100%;

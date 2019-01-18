@@ -163,7 +163,7 @@ p {
 .navigation {
   margin: 0 auto;
   padding: 12px 0;
-  background-color: #FAFAFA;
+  background-color: #F6F6F6;
   dispaly: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,13 +171,14 @@ p {
   text-align: center;
 }
 .navigation .banner {
+  color: #454A59;
   font-size: 4rem;
 }
 .navigation nav {
   margin-top: 18px;
 }
 .navigation nav a {
-  color: black;
+  color: #454A59;
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 10px;

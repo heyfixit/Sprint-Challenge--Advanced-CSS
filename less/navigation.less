@@ -2,18 +2,19 @@
 .navigation {
   margin: 0 auto;
   padding: 12px 0;
-  background-color: #FAFAFA;
+  background-color: @nav-bg;
   .centerflex(@flex-direction: column);
 
 
   .banner {
+    color: @nav-font;
     font-size: 4rem;
   }
 
   nav {
     margin-top: 18px;
     a {
-      .styleless-anchors;
+      .styleless-anchors(@color: @nav-font);
       font-size: 1.8rem;
       margin: 0 10px;
     }

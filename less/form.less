@@ -1,0 +1,27 @@
+// form styles
+form {
+  margin: 0 10px;
+
+  @media @phone {
+    margin: 0;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin: 10px 0;
+
+    input[type="text"] {
+      line-height: 2rem;
+      margin-top: 5px;
+      padding: 5px;
+      border: 1px solid @main-font-color;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+  }
+
+}

@@ -1,1 +1,33 @@
 // Navigation code here
+.navigation {
+  margin: 0 auto;
+  padding: 12px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  .centerflex(@flex-direction: column);
+  .colorize-bg(@nav-bg, 0.9);
+
+  .banner {
+    color: @nav-font;
+    font-size: 4rem;
+  }
+
+  nav {
+    margin-top: 18px;
+    a {
+      display: inline-block;
+      transition: color 0.2s, background-color 0.2s;
+      .styleless-anchors(@color: @nav-font);
+      font-size: 1.7rem;
+      margin: 0 3px;
+      padding: 0 10px 3px;
+
+      &:hover {
+        color: @nav-bg;
+        background-color: @nav-font;
+      }
+    }
+  }
+}

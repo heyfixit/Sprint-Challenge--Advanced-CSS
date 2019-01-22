@@ -1,1 +1,40 @@
 // Mixins Here
+.centerflex(@flex-direction: row) {
+  dispaly: flex;
+  flex-direction: @flex-direction;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.styleless-anchors(@color: black) {
+  color: @color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button(@background-color: #22283A, @color: white) {
+  display: inline-block;
+  background-color: @background-color;
+  border-radius: 5px;
+  cursor: pointer;
+  color: @color;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 8px 16px 4px;
+  border: 2px solid @background-color;
+
+  &:hover {
+    background-color: @color;
+    color: @background-color;
+  }
+}
+
+// from https://stackoverflow.com/questions/5176114/lesscss-converting-rgba-to-hex-how-to-nest-color-variables-into-a-mixin
+// Mixin to convert from a given Hex value to an hsla value
+// This allows for setting the background opacity with just a hex and alpha
+.colorize-bg(@color: white, @alpha: 1) {
+  background: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+}
